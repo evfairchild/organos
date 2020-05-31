@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/contact.css">
+
+<div id="page-wrapper">
+  <header id="header">
+    <figure>
+      <img class="grid-img-home" id="organos logo" src="./img/home/organos_logo_full.png" alt="organos logo"/>
+    </figure>
+      <div class="grid-item" style="text-align: right;">
+        <nav class="nav-bar">
+            <a href="./index.html">HOME</a>
+            <a href="./services.html">SERVICES</a>
+            <a href="#news">NEWS</a>
+            <a href="./team.html">TEAM</a>
+            <a class="active" href="./contact.html">CONTACT</a>
+        </nav>
+      </div>
+  </header>
+
+  <div class="container">
+    <form id="contact" action="mail_handler.php" method="post">
+      <h3>We'd love to hear from you!</h3>
+      <fieldset>
+        <input style="width: 48%;" name="first_name" placeholder="First name" type="text" tabindex="1" required autofocus>
+        <input style="width: 48%;" name="last_name" placeholder="Last name" type="text" tabindex="2" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input name="email" placeholder="Your Email Address" type="email" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input name="phone" placeholder="Your Phone Number" type="tel" tabindex="4">
+      </fieldset>
+      <fieldset>
+        <input name="website" placeholder="Your Web Site starts with http://" type="url" tabindex="5">
+      </fieldset>
+      <fieldset>
+        <textarea name="msg" placeholder="Type your Message Here...." tabindex="6" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button class="btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <hr>
+  <footer class="grid-container">
+    <figure>
+      <img class="footer-img" src="./img/home/organos_logo.png">
+    </figure>
+    <p>&copy 2020 Organos. All rights reserved. <br>Contact:
+      <a href="mailto:info@organos.com">info@organos.com</a>
+    </p>
+  </footer>
+</div>

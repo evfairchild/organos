@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/contact.css">
+
+<div id="page-wrapper">
+  <header id="header">
+    <figure>
+      <img class="grid-img-home" id="organos logo" src="./img/home/organos_logo_full.png" alt="organos logo"/>
+    </figure>
+      <div class="grid-item" style="text-align: right;">
+        <nav class="nav-bar">
+            <a href="./index.html">HOME</a>
+            <a href="./services.html">SERVICES</a>
+            <a href="#news">NEWS</a>
+            <a class="active" href="./team.html">TEAM</a>
+            <a href="./contact.html">CONTACT</a>
+        </nav>
+      </div>
+  </header>
+
+  <div class="container">
+    <div id="contact"
+    <?php
+      $name = htmlspecialchars($_POST['first_name']);
+      echo $name;
+    ?>
+    </div>
+  </div>
+
+  <hr>
+  <footer class="grid-container">
+    <figure>
+      <img class="footer-img" src="./img/home/organos_logo.png">
+    </figure>
+    <p>&copy 2020 Organos. All rights reserved. <br>Contact:
+      <a href="mailto:info@organos.com">info@organos.com</a>
+    </p>
+  </footer>
+</div>
