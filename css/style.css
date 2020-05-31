@@ -11,12 +11,16 @@ dark blue: #221f22  rgb(34, 31, 34)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1500px;
 }
 
 body, html {
   height: 100%;
   background-color: #ffffff;
   font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 h2 {
@@ -67,14 +71,15 @@ header {
 
 .nav-bar {
   background-color: inherit;
-  padding: 10px 30px;
+  padding-top: 20px;
   font-size: 100%;
   color: #0c80a1;
 }
 
 .nav-bar a {
+  border: 2px solid #fff;
   color: #085a72;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 .nav-bar a:hover {
   border: 2px solid #085a72;
@@ -84,9 +89,15 @@ header {
 .nav-bar a.active {
   border: 2px solid #085a72;
   border-radius: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   background-color: inherit;
   color: #085a72;
+}
+@@media (min-width: 468px) {
+  .nav-bar {
+    font-size: 80%;
+  }
+
 }
 
 #page-wrapper {
