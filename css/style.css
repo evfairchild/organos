@@ -5,7 +5,7 @@ dark blue: #221f22  rgb(34, 31, 34)
 **/
 
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
-@import "https://fonts.googleapis.com/css2?family=PT+San:400,700";
+@import "https://fonts.googleapis.com/css2?family=Montserrat";
 
 * {
   margin: 0;
@@ -17,14 +17,14 @@ dark blue: #221f22  rgb(34, 31, 34)
 body, html {
   height: 100%;
   background-color: #ffffff;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   align-items: center;
   margin: auto;
 }
 
 h2 {
-  font-family: "PT Sans",Times,sans-serif;
+  font-family: "Montserrat",Times,sans-serif;
   text-align: center;
   font-size: 2vw;
   font-weight: 400;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h4 {
-  font-family: "PT Sans",Times,sans-serif;
+  font-family: "Montserrat",Times,sans-serif;
   text-align: center;
   font-size: 1vw;
   font-weight: 400;
@@ -44,7 +44,7 @@ h4 {
 }
 
 p {
-  font-family: "PT Sans",Times,sans-serif;
+  font-family: "Montserrat",Times,sans-serif;
   margin: 1vw;
   padding: 0 0.5vw;
   font-size: 1.2vw;
@@ -118,7 +118,7 @@ a {
 .btn {
   padding: 10px 20px 10px 20px;
   font-size: 1.3vw;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   border: 2px solid currentcolor;
   border-radius: 4px;
