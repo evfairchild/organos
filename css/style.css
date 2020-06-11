@@ -4,14 +4,13 @@ medium blue: #1f3750  rgb(31, 55, 80)
 dark blue: #221f22  rgb(34, 31, 34)
 **/
 
-@import "https://fonts.googleapis.com/css?family=Lato:400,700";
 @import "https://fonts.googleapis.com/css2?family=Montserrat";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1500px;
+  max-width: 100%;
 }
 
 body, html {
@@ -20,23 +19,22 @@ body, html {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   align-items: center;
-  margin: auto;
 }
 
 h2 {
   font-family: "Montserrat",Times,sans-serif;
   text-align: center;
-  font-size: 2vw;
+  font-size: auto;
   font-weight: 400;
   margin: auto auto;
   clear: both;
-  color: #444;
+  /* color: #444; */
 }
 
 h4 {
   font-family: "Montserrat",Times,sans-serif;
   text-align: center;
-  font-size: 1vw;
+  font-size: auto;
   font-weight: 400;
   margin: auto auto;
   clear: both;
@@ -47,8 +45,9 @@ p {
   font-family: "Montserrat",Times,sans-serif;
   margin: 1vw;
   padding: 0 0.5vw;
-  font-size: 1.2vw;
+  font-size: auto;
   font-weight: 400;
+  text-align: justify;
   color: #444;
 }
 
@@ -98,10 +97,6 @@ header {
     font-size: 80%;
   }
 
-}
-
-#page-wrapper {
-  position: relative;
 }
 
 a {
@@ -171,8 +166,20 @@ a {
 }
 
 .banner {
+  position: relative;
   width: 100%;
-  padding: 10px 20px;
+  height: 100%;
+  background-image: url("img/home/organos_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, 50%);
+  color: white;
 }
 
 .footer-img {
@@ -183,4 +190,109 @@ a {
 footer p {
   float: right;
   text-align: right;
+}
+
+
+.slider_background{
+background-image: cursor;
+}
+
+.slide-caption {
+padding:0;
+height:76px;
+margin:0;
+margin-top:34%;
+width:auto;
+}
+
+.slide-caption .btn-primary{
+width:100%;
+height:100%;
+display:inline-block;
+vertical-align: middle;
+font-weight:normal;
+font-size:18px;
+}
+.slide-caption .btn-primary span{
+display:inline-block;
+vertical-align: middle;
+}
+.centerer{
+height:100%;
+width:0;
+display:inline-block;
+vertical-align: middle;
+}
+.slide-caption{
+color:#fff;
+background-color:#00aced;
+}
+.slider-container{
+overflow:hidden;
+}
+.slide-caption .row, .slide-caption .col-md-2{
+height:100%;
+}
+.slide-caption .slide-text{
+padding:6px 45px;
+}
+.slider-container .slider-left, .slider-container .slider-right {
+padding:0;
+margin-bottom: -9999px;
+padding-bottom: 9986px;
+}
+.slider-right{
+padding:15px;
+background:#00aced;
+}
+.slider-right h2{
+font-weight:normal!important;
+font-family: "Museo-300", Helvetica Neue, Helvetica, Arial, sans-serif;
+color:#fff !important;
+text-transform: uppercase;
+font-size:18px;
+line-height: 26px;
+margin: 15px;
+padding-left: 15px;
+}
+.slider-right ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+.slider-right .arrow{
+-webkit-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+line-height:normal;
+float:right;
+color:#346100;
+font-weight: 100;
+font-size:14px;
+}
+.slide-title{
+margin-bottom: 3px;
+font-size:20px;
+color:#fff;
+}
+.slider-right ul li a{
+-webkit-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+display:block;
+padding:20px 30px;
+background:#f6f5f6;
+text-transform: uppercase;
+font-size:16px;
+color:#475055;
+margin-bottom: -1px;
+}
+.slider-right ul li a:hover{
+background:#00aced;
+text-decoration:none;
+color:#fff;
+}
+.slider-right ul li a:hover .arrow{
+color:#fff;
+}
+.slider-right .glyphicon{
+display:inline-block;
 }
