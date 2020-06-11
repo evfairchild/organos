@@ -2,89 +2,143 @@
 
 <!DOCTYPE html>
 
-<link rel="stylesheet" type="text/css" href="./css/style.css">
 
+<!doctype html>
 <html>
-<div id="page-wrapper">
-  <header id="header">
-    <figure>
-      <img class="grid-img-home" id="organos logo" src="./img/home/organos_logo_full.png" alt="organos logo"/>
-    </figure>
-      <div class="grid-item" style="text-align: right;">
-        <nav class="nav-bar">
-            <a class="active" href="./index.html">HOME</a>
-            <a href="./services.html">SERVICES</a>
-            <a href="#news">NEWS</a>
-            <a href="./team.html">TEAM</a>
-            <a href="./contact.html">CONTACT</a>
-        </nav>
-      </div>
-  </header>
-  <body>
-    <div class="banner">
-      <img class="banner" id="header-img" src="./img/home/organos_banner.png" alt="Organos Homepage logo and banner"
-      />
-    </div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
-  <div class="container">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/slider.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Organos Inc.</title>
+</head>
+
+<header id="header">
+	<figure>
+		<img class="grid-img-home" id="organos logo" src="./img/home/organos_logo_full.png" alt="organos logo"/>
+	</figure>
+		<div class="grid-item" style="text-align: right;">
+			<nav class="nav-bar">
+					<a class="active" href="./index.html">HOME</a>
+					<a href="./services.html">SERVICES</a>
+					<a href="#news">NEWS</a>
+					<a href="./team.html">TEAM</a>
+					<a href="./contact.html">CONTACT</a>
+			</nav>
+		</div>
+</header>
+
+<body>
+	<section class="cd-hero js-cd-hero js-cd-autoplay">
+		<ul class="cd-hero__slider">
+			<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<img style="width: 20%;" src="img/home/organos_logo.png" alt="Organos Inc. logo">
+					<h2>Organos</h2>
+					<p style="text-align: center;">Revolutionary Tissue Chip Technology</p>
+					<!-- <a href="http://codyhouse.co/gem/hero-slider/" class="cd-hero__btn">Article &amp; Download</a> -->
+				</div> <!-- .cd-hero__content -->
+			</li>
+
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Leader in Cardiac Tissue Research</h2>
+					<p style="text-align: center;">3D human cardiac tissue models and an advanced silico analysis platform.</p>
+					<a href="./news.html" class="cd-hero__btn">Our Story</a>
+					<!-- <a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a> -->
+				</div> <!-- .cd-hero__content -->
+
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img style="width: 75%;" src="./img/home/heart_organ.jpg" alt="stock heart clipart">
+				</div> <!-- .cd-hero__content -->
+			</li>
+
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="img/home/silicon_lattice.jpg" alt="silicon lattice render">
+				</div> <!-- .cd-hero__content -->
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Advanced <i>In-Silico</i> Modeling</h2>
+					<p style="text-align: center;">Capable of determining drug mechanism of action and predict in vivo response</p>
+					<a href="./services.html" class="cd-hero__btn">Our Technology</a>
+					<!-- <a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a> -->
+				</div> <!-- .cd-hero__content -->
+
+			</li>
+
+			<li class="cd-hero__slide cd-hero__slide--video js-cd-slide">
+        <div class="cd-hero__content cd-hero__content--half-width"></div>
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>See what Organos can do for you</h2>
+					<!-- <p></p> -->
+					<a href="./contact.html" class="cd-hero__btn">Contact Us</a>
+				</div> <!-- .cd-hero__content -->
+
+				<div class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="img/video/lab_action">
+					<!-- video element will be loaded using JavaScript -->
+				</div> <!-- .cd-hero__content -->
+			</li>
+		</ul> <!-- .cd-hero__slider -->
+
+		<div class="cd-hero__nav js-cd-nav">
+			<nav>
+				<span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
+				<ul>
+					<li class="cd-selected"><a href="#0"></a></li>
+					<li><a href="#0"></a></li>
+					<li><a href="#0"></a></li>
+					<li><a href="#0"></a></li>
+				</ul>
+			</nav>
+		</div> <!-- .cd-hero__nav -->
+	</section> <!-- .cd-hero -->
+	<script src="js/slider.js"></script> <!-- Resource JavaScrip -->
+
+
+  <!-- <div class="container">
     <h2>Revolutionizing Drug Development with Tissue Chip Technology</h2>
     <p>Organos is a leader in the investigation of compound effects on cardiac tissue. Its robust platform combines a 3D human cardiac tissue models and an advanced in silico analysis platforms.</p>
     <button class="btn" onclick="location.href='./services.html';">Our Technology</button>
+  <hr> -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>Microphysiological Systems</h2>
+    </div>
+    <div class="grid-item">
+      <h2>Integrated <i>in silico</i> Modeling</h2>
+    </div>
+
+    <figure>
+      <img class="grid-img-home" src="./img/home/microphysiological_systems.png" alt="microphysiological systems"/>
+    </figure>
+
+    <figure>
+      <img class="grid-img-home" src="./img/home/integrated_in_silico_modeling.png" alt="integrated in silicon modeling"/>
+    </figure>
+
+    <div class="grid-item">
+      <p>Organos 3D tissue model allows combined analysis of tissue electrophysiology, calcium handling dynamics, and cardiac contraction to provide insight into the key pathways of compound cardiotoxicity.  Amenable for repeat testing and long term culture, these cost effective micorotissues provide physiologically relevant markers for evaluating compound safety.</p>
+    </div>
+
+    <div class="grid-item">
+      <p>Organos advanced in-silico system augments the experimental outputs of the system, mechanistically determining method of action from dose escalation studies, and prediction of effects in both relevant animal models and humans, including population effects and projection onto disease models.  </p>
+    </div>
+  </div>
+  </div>
   <hr>
-    <div class="grid-container">
-      <figure>
-        <img class="grid-img-home" src="./img/home/heart_organ.jpg" alt="Heart image"/>
-      </figure>
+</body>
+  <footer class="grid-container">
+    <figure>
+      <img class="footer-img" src="./img/home/organos_logo.png">
+    </figure>
+    <p>&copy 2020 Organos. All rights reserved. <br>Contact:
+      <a href="mailto:info@organosincinc.com">info@organosinc.com</a>
+    </p>
+  </footer>
 
-      <figure>
-        <img class="grid-img-home" src="./img/home/silicon_lattice.jpg" alt="Silicon image"/>
-      </figure>
-
-      <div class="grid-item">
-        <p>Advanced organ-on-chip technology to create beating micro tissues for testing</p>
-      </div>
-
-      <div class="grid-item">
-        <p>Integrated in silico modeling to determine drug mechanism of action and predict in vivo response</p>
-      </div>
-
-      <div class="grid-item"><hr></div>
-      <div class="grid-item"><hr></div>
-
-      <div class="grid-item">
-        <h2>Microphysiological Systems</h2>
-      </div>
-      <div class="grid-item">
-        <h2>Integrated <i>in silico</i> Modeling</h2>
-      </div>
-
-      <figure>
-        <img class="grid-img-home" src="./img/home/microphysiological_systems.png" alt="microphysiological systems"/>
-      </figure>
-
-      <figure>
-        <img class="grid-img-home" src="./img/home/integrated_in_silico_modeling.png" alt="integrated in silicon modeling"/>
-      </figure>
-
-      <div class="grid-item">
-        <p>Organos 3D tissue model allows combined analysis of tissue electrophysiology, calcium handling dynamics, and cardiac contraction to provide insight into the key pathways of compound cardiotoxicity.  Amenable for repeat testing and long term culture, these cost effective micorotissues provide physiologically relevant markers for evaluating compound safety.</p>
-      </div>
-
-      <div class="grid-item">
-        <p>Organos advanced in-silico system augments the experimental outputs of the system, mechanistically determining method of action from dose escalation studies, and prediction of effects in both relevant animal models and humans, including population effects and projection onto disease models.  </p>
-      </div>
-    </div>
-    </div>
-    <hr>
-  </body>
-    <footer class="grid-container">
-      <figure>
-        <img class="footer-img" src="./img/home/organos_logo.png">
-      </figure>
-      <p>&copy 2020 Organos. All rights reserved. <br>Contact:
-        <a href="mailto:info@organos.com">info@organos.com</a>
-      </p>
-    </footer>
-
-</div>
 </html>
